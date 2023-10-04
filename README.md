@@ -1,33 +1,32 @@
-# Scroll Reveal JS
-## _Créer des animations de défilement réactives_
+# Scrollify Reveal
+## _Create responsive scroll animations_
 
-La fonction scrollReveal vous permet de créer des animations de défilement (scroll reveal) pour les éléments HTML. Elle utilise l'API Intersection Observer pour détecter quand les éléments deviennent visibles à l'écran et appliquer des animations spécifiées.
+The ScrollifyReveal class allows you to create scroll reveal animations for HTML elements. It utilizes the Intersection Observer API to detect when elements become visible on the screen and applies specified animations.
 
-## Utilisation de base
-
-```sh
-const scrollReveal = new ScrollReveal();
-scrollReveal.reveal('.element', options);
-```
->    .element : Un sélecteur CSS qui cible les éléments que vous souhaitez animer.
-    options : Un objet contenant les options de configuration (facultatif).
-
-## Options disponibles
-
-Les options peuvent être passées sous forme d'objet lors de l'appel de scrollReveal. Voici les options disponibles :
-
-- delay (nombre, par défaut: 0) : Le délai en millisecondes avant que l'animation ne commence après que l'élément devient visible.
-- distance (chaîne de caractères, par défaut: '0px') : La distance de translation verticale à appliquer à l'élément lors de son apparition.
-- duration (chaîne de caractères, par défaut: '1000ms') : La durée de l'animation.
-- easing (chaîne de caractères, par défaut: 'cubic-bezier(0.5, 0, 0, 1)') : La fonction de temporisation pour l'animation.
-- zoom (nombre, par défaut: 0.8) : Définir la valeur initiale de l'effet de zoom de l'élément lors de son apparition.
-- hideOnExit (booléen, par défaut: true) : Activer ou désactiver la disparition de l'élément lorsqu'il sort de la vue.
-- opacity (nombre, par défaut: 1) : Définir l'opacité de l'élément après son apparition.
-
-## Exemple d'utilisation
+## Basic Usage
 
 ```sh
-scrollReveal.reveal('.element', { delay: 500, distance: '20px', duration: '800ms', zoom: true, hideOnExit: true, opacity: 1});
+scrollifyReveal.reveal('.element', options);
+```
+>    .element: A CSS selector targeting the elements you want to animate.
+options: An object containing configuration options (optional).
+
+## Available Options
+
+Options can be passed as an object when calling scrollReveal. Here are the available options:
+
+- delay (number, default: 0): The delay in milliseconds before the animation starts after the element becomes visible.
+- distance (string, default: '0px'): The vertical translation distance to apply to the element upon appearing.
+- duration (string, default: '1000ms'): The animation duration.
+- easing (string, default: 'cubic-bezier(0.5, 0, 0, 1)'): The timing function for the animation.
+- zoom (number, default: 0.8): Set the initial value for the element's zoom effect upon appearing.
+- hideOnExit (boolean, default: true): Enable or disable the element's disappearance when it exits the view.
+- opacity (number, default: 1): Set the opacity of the element after it appears.
+
+## Example Usage
+
+```sh
+scrollifyReveal.reveal('.element', { delay: 500, distance: '20px', duration: '800ms', zoom: true, hideOnExit: true, opacity: 1});
 ```
 
-Cet exemple cible les éléments avec la classe "tagline" et leur applique une animation de défilement avec un délai de 500 millisecondes, une distance de translation de 20 pixels, une durée de 800 millisecondes, un effet de zoom et une disparition lors de la sortie de la vue.
+This example targets elements with the "tagline" class and applies a scroll animation with a 500-millisecond delay, a 20-pixel vertical translation distance, an 800-millisecond duration, a zoom effect, and disappearing when exiting the view.
