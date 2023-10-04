@@ -73,3 +73,5 @@ class ScrollReveal {
     }
 
 }
+
+const scrollifyReveal = new ScrollifyReveal();
