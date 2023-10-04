@@ -27,7 +27,7 @@ Les options peuvent être passées sous forme d'objet lors de l'appel de scrollR
 ## Exemple d'utilisation
 
 ```sh
-scrollReveal.reveal('.tagline', { delay: 500, distance: '20px', duration: '800ms', zoom: true, hideOnExit: true, opacity: 1});
+scrollReveal.reveal('.element', { delay: 500, distance: '20px', duration: '800ms', zoom: true, hideOnExit: true, opacity: 1});
 ```
 
 Cet exemple cible les éléments avec la classe "tagline" et leur applique une animation de défilement avec un délai de 500 millisecondes, une distance de translation de 20 pixels, une durée de 800 millisecondes, un effet de zoom et une disparition lors de la sortie de la vue.
