@@ -6,7 +6,8 @@ La fonction scrollReveal vous permet de créer des animations de défilement (sc
 ## Utilisation de base
 
 ```sh
-scrollReveal('.element', options);
+const scrollReveal = new ScrollReveal();
+scrollReveal.reveal('.element', options);
 ```
 >    .element : Un sélecteur CSS qui cible les éléments que vous souhaitez animer.
     options : Un objet contenant les options de configuration (facultatif).
@@ -19,13 +20,14 @@ Les options peuvent être passées sous forme d'objet lors de l'appel de scrollR
 - distance (chaîne de caractères, par défaut: '0px') : La distance de translation verticale à appliquer à l'élément lors de son apparition.
 - duration (chaîne de caractères, par défaut: '1000ms') : La durée de l'animation.
 - easing (chaîne de caractères, par défaut: 'cubic-bezier(0.5, 0, 0, 1)') : La fonction de temporisation pour l'animation.
-- zoom (booléen, par défaut: true) : Activer ou désactiver l'effet de zoom de l'élément lors de son apparition.
+- zoom (nombre, par défaut: 0.8) : Définir la valeur initiale de l'effet de zoom de l'élément lors de son apparition.
 - hideOnExit (booléen, par défaut: true) : Activer ou désactiver la disparition de l'élément lorsqu'il sort de la vue.
+- opacity (nombre, par défaut: 1) : Définir l'opacité de l'élément après son apparition.
 
 ## Exemple d'utilisation
 
 ```sh
-scrollReveal('.tagline', { delay: 500, distance: '20px', duration: '800ms', zoom: true, hideOnExit: true });
+scrollReveal.reveal('.tagline', { delay: 500, distance: '20px', duration: '800ms', zoom: true, hideOnExit: true, opacity: 1});
 ```
 
 Cet exemple cible les éléments avec la classe "tagline" et leur applique une animation de défilement avec un délai de 500 millisecondes, une distance de translation de 20 pixels, une durée de 800 millisecondes, un effet de zoom et une disparition lors de la sortie de la vue.
