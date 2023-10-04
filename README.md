@@ -1,4 +1,4 @@
-# Scroll Reveal
+# Scroll Reveal JS
 ## _Créer des animations de défilement réactives_
 
 La fonction scrollReveal vous permet de créer des animations de défilement (scroll reveal) pour les éléments HTML. Elle utilise l'API Intersection Observer pour détecter quand les éléments deviennent visibles à l'écran et appliquer des animations spécifiées.
