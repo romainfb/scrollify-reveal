@@ -5,6 +5,9 @@
 
 The ScrollifyReveal class allows you to create scroll reveal animations for HTML elements. It utilizes the Intersection Observer API to detect when elements become visible on the screen and applies specified animations.
 
+## Demo
+https://romainfb.github.io/Scrollify-Reveal/
+
 ## Basic Usage
 
 ```sh
