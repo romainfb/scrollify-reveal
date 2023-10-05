@@ -33,6 +33,3 @@ scrollifyReveal.reveal('.element', { delay: 500, distance: '20px', duration: '80
 
 This example targets elements with the "tagline" class and applies a scroll animation with a 500-millisecond delay, a 20-pixel vertical translation distance, an 800-millisecond duration, a zoom effect, and disappearing when exiting the view.
 This license is subject to modification by the copyright holder, and any new version of this license will be effective from the date of publication by the copyright holder.
-
-For any inquiries regarding this license, please contact Romain Fouillade-Bardet.
-```
