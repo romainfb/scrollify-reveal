@@ -1,7 +1,7 @@
 # Scrollify Reveal
 ## _Create responsive scroll animations_
 
- [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://www.javascript.com) [![Latest release](https://badgen.net/github/release/Naereen/Strapdown.js)](https://github.com/romainfb/Scrollify-Reveal/releases)
 
 The ScrollifyReveal class allows you to create scroll reveal animations for HTML elements. It utilizes the Intersection Observer API to detect when elements become visible on the screen and applies specified animations.
 
