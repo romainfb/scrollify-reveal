@@ -1,5 +1,4 @@
 class ScrollifyReveal {
-
     constructor() {
         // Default options for scrolling animations
         this.defaultOptions = {
@@ -14,7 +13,6 @@ class ScrollifyReveal {
     }
 
     reveal(selector, options) {
-
         // Selects all items corresponding to the selector
         const elements = document.querySelectorAll(selector);
 
@@ -38,6 +36,13 @@ class ScrollifyReveal {
 
                             // Marks element as revealed
                             target.classList.add('revealed');
+
+                            // Add a transitionend event listener to remove the scale transform
+                            target.addEventListener('transitionend', () => {
+                                target.style.transform = '';
+                                target.style.transition = '';
+                                target.style.transitionDelay = '';
+                            }, { once: true });
                         }, options.delay);
                     }
                 } else if (options.hideOnExit) {
@@ -72,7 +77,6 @@ class ScrollifyReveal {
             observer.observe(element);
         });
     }
-
 }
 
 const scrollifyReveal = new ScrollifyReveal();
