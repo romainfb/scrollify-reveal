@@ -1,6 +1,8 @@
 # Scrollify Reveal
 ## _Create responsive scroll animations_
 
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 The ScrollifyReveal class allows you to create scroll reveal animations for HTML elements. It utilizes the Intersection Observer API to detect when elements become visible on the screen and applies specified animations.
 
 ## Basic Usage
@@ -30,21 +32,6 @@ scrollifyReveal.reveal('.element', { delay: 500, distance: '20px', duration: '80
 ```
 
 This example targets elements with the "tagline" class and applies a scroll animation with a 500-millisecond delay, a 20-pixel vertical translation distance, an 800-millisecond duration, a zoom effect, and disappearing when exiting the view.
-
-## LICENSE (Free for personal and commercial use)
-
-```sh
-Scrollify Reveal Usage License
-
-Copyright (c) 2023 - Romain Fouillade-Bardet
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and its associated documentation (the "Software"), to use the Software for personal or commercial purposes, subject to the following conditions:
-
-1. You may use, copy, and modify the Software for personal or commercial purposes, but you may not sell, rent, lease, sublicense, or distribute the Software.
-
-2. You must retain all copyright notices and this license notice in all copies of the Software that you create.
-
-THE SOFTWARE IS PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 This license is subject to modification by the copyright holder, and any new version of this license will be effective from the date of publication by the copyright holder.
 
